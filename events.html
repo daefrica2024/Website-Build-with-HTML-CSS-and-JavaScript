@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Events - Calgary Blend</title>
+  <link rel="icon" type="image/png" href="images/Favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles2.css">
+</head>
+<body>
+  <header>
+    <h1>Calgary Blend</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="events.html">Events</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h2>Upcoming Events</h2>
+      <ul>
+        <li><strong>Christmas Party</strong>: December 20, 2024</li>
+        <li><strong>Regular Conversation Night</strong>: January 3, 2025</li>
+      </ul>
+    </section>
+    <article>
+        <h3>Past Events</h3>
+        <section class="carousel">
+            <button class="carousel-btn prev" onclick="changeSlide(-1)">&#10094;</button>
+            <ul class="carousel-images">
+              <li><img src="images/September.jpeg" alt="September Regular Conversation Night"></li>
+              <li><img src="images/October.jpeg" alt="October Regular Conversation Night"></li>
+              <li><img src="images/November.jpeg" alt="November Regular Conversation Night"></li>
+            </ul>
+            <button class="carousel-btn next" onclick="changeSlide(1)">&#10095;</button>
+          </section>
+      </article>
+
+      <script src="script.js"></script>
+
+  </main>
+
+  <footer>
+    <p>Follow us on Instagram: <a href="https://instagram.com/calgaryblend">@calgaryblend</a></p>
+  </footer>
+
+</body>
+</html>

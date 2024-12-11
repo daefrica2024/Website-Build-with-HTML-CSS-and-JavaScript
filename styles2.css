@@ -1,0 +1,153 @@
+body, h1, h2, h3, p, ul, li, a {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Open Sans', sans-serif;
+    color: #8e9aaf; 
+    background-color: #f9dcc4;
+    line-height: 1.6;
+  }
+  
+  header {
+    font-family: 'Balsamiq Sans', sans-serif;
+    background-color: #f3a683; 
+    color: white;
+    padding: 20px 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  header h1 {
+    font-size: 2.2rem;
+    font-weight: bold;
+  }
+  
+  nav ul {
+    display: flex;
+    gap: 15px;
+  }
+  
+  nav ul li a {
+    color: white;
+    font-weight: bold;
+    font-size: 0.9rem;
+    transition: color 0.3s ease;
+  }
+  
+  nav ul li a:hover {
+    color: #ffa69e; 
+  }
+  
+  main {
+    padding: 20px 10%;
+    text-align: center;
+    font-family: 'PT Sans', sans-serif;
+  }
+  
+  section, article {
+    margin-bottom: 40px;
+  }
+  
+  section h2, article h3 {
+    color: #f3a683;
+    margin-bottom: 10px;
+  }
+  
+  section p, article p {
+    margin-bottom: 20px;
+    color: #8e9aaf;
+  }
+  
+  a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #f3a683;
+    color: white;
+    border-radius: 5px;
+    font-weight: bold;
+    text-align: center;
+    transition: background-color 0.3s ease;
+  }
+  
+  a:hover {
+    color: #ffa69e;
+    background-color: #ffff; 
+  }
+  
+.carousel {
+    position: relative;
+    max-width: 50%; 
+    margin: 20px auto;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 50px; 
+    box-shadow: 0 5px 7px rgba(0, 0, 0, 0.2); 
+  }
+  
+  .carousel-images {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+  
+  .carousel-images li {
+    min-width: 100%;
+  }
+  
+  .carousel-images img {
+    width: 100%;
+    height: auto;
+    border-radius: 50px;
+  }
+  
+  .carousel-btn {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    padding: 8px; 
+    cursor: pointer;
+    font-size: 1.2rem;
+  }
+  
+  .carousel-btn:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  
+  .prev {
+    left: 5px; 
+  }
+  
+  .next {
+    right: 5px; 
+  }
+  
+    footer {
+        background-color: #8e9aaf; 
+        color: white;
+        padding: 20px 10%;
+        text-align: center;
+      }
+      
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    header, main, footer {
+      padding: 10px 5%;
+    }
+  
+    nav ul {
+      flex-direction: column;
+      gap: 10px;
+    }
+  }
